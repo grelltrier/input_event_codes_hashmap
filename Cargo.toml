@@ -1,0 +1,13 @@
+[package]
+name = "input_event_codes_hashmap"
+version = "0.1.0"
+authors = ["pentamassiv <pentamassiv@posteo.de>"]
+edition = "2018"
+license = "GPL-2.0-only"
+description = "Hashmaps to look up the u32 value for a given input event code"
+repository = "https://github.com/grelltrier/input_event_codes_hashmap"
+keywords = ["input-event-codes", "linux", "hashmap", "lazy-static"]
+categories = ["external-ffi-bindings", "hardware-support", "os::linux-apis"]
+
+[dependencies]
+lazy_static = "1.4"
