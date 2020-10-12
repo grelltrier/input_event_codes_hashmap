@@ -1,6 +1,6 @@
 [package]
 name = "input_event_codes_hashmap"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["pentamassiv <pentamassiv@posteo.de>"]
 edition = "2018"
 license = "GPL-2.0-only"

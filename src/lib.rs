@@ -3,6 +3,8 @@
 #[macro_use]
 extern crate lazy_static;
 
+use std::collections::HashMap;
+
 pub use self::abs::*;
 pub use self::btn::*;
 pub use self::ev::*;
@@ -28,3 +30,10 @@ mod rep;
 mod snd;
 mod sw;
 mod syn;
+
+/// Returns true if the keycode is in the HashMap and thus a valid input code
+pub fn is_valid_input_code<'a>(map: &'a HashMap<&'static str, u32>, code: u32) -> bool {
+    map.iter()
+        .find_map(|(key, &val)| if val == code { Some(key) } else { None })
+        .is_some()
+}
