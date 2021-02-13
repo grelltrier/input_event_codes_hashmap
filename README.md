@@ -1,3 +1,6 @@
+[![Crate](https://img.shields.io/crates/v/input_event_codes_hashmap.svg)](https://crates.io/crates/input_event_codes_hashmap)
+[![dependency status](https://deps.rs/repo/github/grelltrier/input_event_codes_hashmap/status.svg)](https://deps.rs/repo/github/grelltrier/input_event_codes_hashmap)
+
 # input_event_codes_hashmap
 This crate provides HashMaps to look up the u32 value for a given input event code. The lazy-static crate is used so they are only created, if you used them.
 The codes are taken from input-event-codes.h.
